@@ -1,4 +1,4 @@
-Exercise #9: Elastic Load Balancing
+# Exercise #9: Elastic Load Balancing
 
 In this exercise you will be creating an Application Load Balancer and using it to view a web page on an EC2 instance.
 Do to this, take the following steps.

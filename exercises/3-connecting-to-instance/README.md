@@ -14,9 +14,9 @@ The easiest way to get this is:
 1. In the details panel below, you should see "Private IPs" (should only be one).  Record this IP address.
 1. In your Cloud9 IDE use the following command to connect to your instance.
 
-```bash
-ssh ec2-user@<ip-address-of-your-instance>
-```
+    ```bash
+    ssh ec2-user@<ip-address-of-your-instance>
+    ```
 
 You may get a warning about host authenticity.  This is showing because you've not connected to this instance in the past.
 You can safely ignore by typing "yes" and hitting enter.  You should now be connected to your instance via SSH.  You know

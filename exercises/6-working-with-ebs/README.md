@@ -64,10 +64,10 @@ To do this, log into your supplied AWS account and follow along:
     * You should be at a "sh" prompt.  
     * lets list our available EBS volumes
     
-```bash
-# List the devices.  xv is a special prefix to help you identify the EBS volumes
-sudo ls -lah /dev/xv*
-```
+    ```bash
+    # List the devices.  xv is a special prefix to help you identify the EBS volumes
+    sudo ls -lah /dev/xv*
+    ```
 
 You should see a result like this
 
