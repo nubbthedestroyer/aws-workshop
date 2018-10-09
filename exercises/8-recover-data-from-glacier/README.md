@@ -31,7 +31,7 @@ In this exercise, you will be creating a an Amazon Glacier Vault.  To complete t
 1. Now lets start a job to recover the data.  Use the following command to start the recovery job.
 
     ```bash
-    aws glacier initiate-job --account-id - --vault-name test --job-parameters '{"Type": "archive-retrieval", "ArchiveId": "<your-job-id>"}'
+    aws glacier initiate-job --account-id - --vault-name <your-vault-name> --job-parameters '{"Type": "archive-retrieval", "ArchiveId": "<your-job-id>"}'
     ```
     
 1. Now use this command to get the output of the recovery job.

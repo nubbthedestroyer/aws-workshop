@@ -27,7 +27,7 @@ chose a unique name, as S3 bucket names are global:
     dd if=/dev/zero of=./test-file-1 bs=1024 count=20000
     
     # upload to S3
-    s3 cp ./test-file-1 "s3://<your-bucket-name>"
+    aws s3 cp ./test-file-1 "s3://<your-bucket-name>"
     ```
 
 1. Now lets view it in the Console.  Open your browser window and go to the S3 service.  You should see your new bucket
@@ -37,7 +37,7 @@ in the list.  Click it to open it and see your file there.
 
     ```bash
     rm ./test-file-1
-    aws cp "s3://<your-bucket-name>/test-file-1" .
+    aws s3 cp "s3://<your-bucket-name>/test-file-1" .
     
     # List the current directory
     ls -lah
@@ -62,7 +62,7 @@ Run this command to create some test files and upload them.
 
     ```bash
     # Remove the files
-    aws s3 rm "s3://<your-bucket-name>/dir2sync/"
+    aws s3 rm --recursive "s3://<your-bucket-name>/dir2sync/"
     
     # Make sure they are gone
     aws s3 ls "s3://<your-bucket-name>/dir2sync/"
