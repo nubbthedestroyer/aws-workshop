@@ -1,2 +1,4 @@
 venv
 .idea
+user-orchestration/.terraform
+user-orchestration/secrets.tfvars
