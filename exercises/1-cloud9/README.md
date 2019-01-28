@@ -41,24 +41,6 @@ but because we are going to be interacting with IAM, we need to use standard cre
 AWS places on temporary credentials.  To setup the correct credentials, we need to input them into the credentials
 chain on the Cloud9 IDE.  
 
-#### Disable Managed Temporary Credentials
-
-1. In Cloud9 IDE, click on "AWS Cloud9" in the top left.  
-1. Click "Preferences"
-1. Expand the "AWS Settings" section.
-1. Click the slider button to disable "AWS managed temporary credentials"
-
-#### Setup AWS CLI credentials chain
-
-You should have received credentials from your instructor in the form of:
-1. Account ID
-1. User Name
-1. Password
-1. aws_access_key_id
-1. aws_secret_access_key
-
-We need #4 and #5 to setup the creds chain.  Run the following command in your IDE
-
 ```bash
 aws configure
 ```
