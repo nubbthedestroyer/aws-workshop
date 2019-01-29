@@ -64,6 +64,8 @@ You will be presented with a black screen and a "sh" terminal.  The more familia
 
 Congratulations!  You connected to some instances like a boss!
 
+If you get a permissions issue or you don't see the server in the list, then its likely that you need to add permissions to the instance profile on the server you've created.  
+
 
 ## Windows Users
 
