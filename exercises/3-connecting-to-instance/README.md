@@ -63,3 +63,10 @@ You will be presented with a black screen and a "sh" terminal.  The more familia
 "bash" at the terminal window and hitting enter.
 
 Congratulations!  You connected to some instances like a boss!
+
+
+## Windows Users
+
+SSH is a remote connectivity technology that originated in the linux world and, as such, doesnt work super smoothly in AWS.  Because of this, my recommendation for those of you on Windows is to use the AWS Systems Manager.  If you are a die hard Bill Gates fan and you would really like to get your windows machine connecting, then you are welcome to attempt to configure puTTY.  Here is a great guide on doing just that:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
