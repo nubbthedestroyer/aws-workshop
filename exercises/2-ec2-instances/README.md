@@ -7,7 +7,7 @@ communicate with each other.  One instance will be launched in the Console and t
 
 By default, Linux instances in AWS authenticate SSH using an symmetric keypair that can be generated or imported.
 
-Lets create a keypair that we can use to connect to the instances.
+Lets create a keypair that we can use to connect to the instances.  BE SURE THE RUN THIS IN YOUR CLOUD9 IDE ONLY.  Running this on your regular machine will overwrite your default private key, which might cause problems authenticating to other services.  Also, this command only works on linux based operating systems, so our students with Windows machines will have to use the IDE or puTTY.
 
 ```bash
 keyname="<your-key-name-here>"
@@ -19,6 +19,8 @@ chmod 600 ~/.ssh/id_rsa
 
 That monster of a shell command will give you an ssh key in the right place in your IDE to connect to instances 
 that are launched with that keypair.
+
+In the case that you didn't create the Cloud9 IDE and are following along in a more manual fashion, you can create and download a keypair from the EC2 console by clicking "Key Pairs" on the left of the EC2 console.
 
 ## Launch an Instance through the console
 
@@ -46,7 +48,7 @@ recognize, like "mlucas-1"
 1. Click "Add Rule"
 1. In the "Type" dropdown, select HTTP.  Leave the other values as is.
 1. Click "Review and Launch", and then Click "Launch"
-1. You'll be asked to select the keypair using the name you specified earlier.
+1. You'll be asked to select the keypair using the name you specified or manually created earlier.
 
 Your instance should be up and running in a few minutes.  You can watch its status by clicking on the instance ID you 
 see or by visiting the AWS Console and looking at the instance list.
