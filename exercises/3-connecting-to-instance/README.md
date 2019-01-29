@@ -64,7 +64,18 @@ You will be presented with a black screen and a "sh" terminal.  The more familia
 
 Congratulations!  You connected to some instances like a boss!
 
-If you get a permissions issue or you don't see the server in the list, then its likely that you need to add permissions to the instance profile on the server you've created.  
+If you get a permissions issue or you don't see the server in the list, then its likely that you need to add permissions to the instance profile on the server you've created.  Instance Roles are a way to pre-authenticate EC2 Instances against AWS services without needing to store any credentials on the instance itself.  In this case, we need to pre-authenticate the instance to the SSM service so that it can register itself to SSM for the remote shell.  Heres how you do this:
+
+1. Open up the IAM service panel in the AWS console.
+1. Click the Roles tab on the left, then click Create Role.
+1. Leave AWS Service selected on click on "EC2", then click next.
+1. In the attach permissions page, search for SSM, then select "AmazonEC2RoleforSSM", and click next.
+1. Skip adding tags for now.  Click next.
+1. Give your role a reasonable name, with your unique identifier, then click create role.
+1. Go back to the EC2 console, select your instance, then choose Actions-->Instance Settings-->Attach or Replace IAM Role
+1. Choose the instance role you created and click Apply
+
+
 
 
 ## Windows Users
