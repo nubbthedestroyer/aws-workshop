@@ -15,7 +15,7 @@ following steps:
     * Transitions for current object versions.  This is the transition age for existing active objects in the s3 bucket.
     * Transitions for previous versions of objects.  Suppose you want to keep objects in S3 for 3 months but you know you won't likely need to restore the objects if they make it past 2 weeks of QA.
     You could use this feature to save costs on object versioning, which can be especially useful if you are updating objects often.
-1. Set a transition for current objects to 3 months and a transition for previous versions to 2 weeks ( 14 days ).
+1. Set a transition for current objects to 3 months and a transition for previous versions to 30 days.
 1. Click through the rest of the screens, leaving everything at defaults, and click Save at the end.  We will create a different policy for expirations.
 
 ### Add a Lifecycle Rule for Expirations (delete)
