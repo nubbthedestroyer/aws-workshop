@@ -1,4 +1,4 @@
-# Controlling S3 Through the CLI
+# Exercise #5: Controlling S3 Through the CLI
 
 In this exercise, you will learn to control S3 through the AWS CLI.  The AWS CLI, or Command Line Interface, 
 is a great way to make use of S3 for programmatic uses, like backups, migrations, deployments, or anything you 
